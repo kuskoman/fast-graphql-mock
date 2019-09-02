@@ -3,19 +3,25 @@
 Under the hood it uses ApolloServer and graphql-import library.
 
 ## Installation
+### Locally
 Using yarn:
+
 `yarn add fast-graphql-mock`
 
+
 or npm:
+
 `npm install fast-graphql-mock`
 
-You can also install this package globally:
 
-
+### Globally
 yarn:
+
 `yarn global add fast-graphql-mock`
 
+
 npm:
+
 `npm install -g fast-graphql-mock`
 
 ## Usage
