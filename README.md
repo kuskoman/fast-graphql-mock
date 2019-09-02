@@ -1,5 +1,5 @@
 # fast-graphql-mock
-*fast-graphql-mock* is a tiny library for mocking GraphQL server using only schema file.
+**fast-graphql-mock** is a tiny library for mocking GraphQL server using only schema file.
 Under the hood it uses ApolloServer and graphql-import library.
 
 ## How to use
