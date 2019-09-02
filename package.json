@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/kuskoman/fast-graphql-mock/issues"
   },
-  "homepage": "https://github.com/kuskoman/fast-graphql-mock#readme"
+  "homepage": "https://github.com/kuskoman/fast-graphql-mock#readme",
+  "dependencies": {
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.5"
+  }
 }
