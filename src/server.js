@@ -1,7 +1,7 @@
 const apollo = require('apollo-server')
 const mocks = require('./fakeData')
 
-function createMockServer(schema, port) {
+const createMockServer = (schema, port) => {
     const server = new apollo.ApolloServer({
         schema,
         mocks
