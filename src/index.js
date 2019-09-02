@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const program = require('commander')
 const startMockServer = require('./server')
 const mockSchema = require('./mock')
