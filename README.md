@@ -25,6 +25,8 @@ npm:
 `npm install -g fast-graphql-mock`
 
 ## Usage
+
+### As CLI
 To mock a schema just run the application with node.
 ```shell
 fast-graphql-mock
@@ -40,6 +42,29 @@ Default port is set to 4000. If you want to change it just use `p` or `--port` f
 ```shell
 fast-graphql-mock -p 3000
 ```
+
+### As separate library
+**fast-graphql-mock** exports following functions:
+
+
+
+`mockSchema`- makes schema file executable and adds mock functions to it
+
+
+`createMockServer`- returns ApolloServer instance from given mockedSchema and adds resolvers mocked using faker.js library
+
+
+`startMockServer`- starts given ApolloServer instance on given port
+
+
+### Example
+The simplest example of usage of this library:
+```javascript
+const schema = mockSchema('schema.graphql')
+const server = createMockServer(schema)
+startMockServer(server, 3000)
+```
+
 
 ## Why?
 Code inside this library is really short (what can't be said about it's dependencies),
