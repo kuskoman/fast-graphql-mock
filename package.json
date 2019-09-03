@@ -1,8 +1,9 @@
 {
   "name": "fast-graphql-mock",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "A library for mocking GraphQL schema using one command",
-  "bin": "src/index.js",
+  "bin": "src/cli.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuskoman/fast-graphql-mock.git"
