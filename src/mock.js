@@ -1,5 +1,5 @@
-const graphqlImport = require('graphql-import')
-const graphqlTools = require('graphql-tools')
+const { importSchema } = require('graphql-import')
+const { makeExecutableSchema, addMockFunctionsToSchema} = require('graphql-tools')
 const fs = require('fs')
 
 const checkIfFileExist = (path) => {
@@ -11,9 +11,9 @@ const checkIfFileExist = (path) => {
 
 const mockSchema = (file) => {
     checkIfFileExist(file)
-    const schemaFile = graphqlImport.importSchema(file)
-    const schema = graphqlTools.makeExecutableSchema({ typeDefs: schemaFile })
-    graphqlTools.addMockFunctionsToSchema({ schema })
+    const schemaFile = importSchema(file)
+    const schema = makeExecutableSchema({ typeDefs: schemaFile })
+    addMockFunctionsToSchema({ schema })
 
     return schema
 }
