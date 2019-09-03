@@ -1,15 +1,20 @@
 const { ApolloServer } = require('apollo-server')
-const mocks = require('./fakeData')
+const fakeData = require('./fakeData')
 
-const createMockServer = (schema, port) => {
-    const server = new ApolloServer({
+const createMockServer = (schema) => {
+    return new ApolloServer({
         schema,
-        mocks
+        mocks: fakeData
     })
+}
 
+const startMockServer = (server, port) => {
     server.listen(port).then(({ url }) => {
         console.log(`Mock server ready at ${url}`);
     })
 }
 
-module.exports = createMockServer
+module.exports = {
+    createMockServer,
+    startMockServer
+}
