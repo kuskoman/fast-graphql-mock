@@ -44,7 +44,7 @@ fast-graphql-mock -p 3000
 ```
 
 ### As separate library
-**fast-graphql-mock** exports following functions:
+**fast-graphql-mock** exports following functions along with TypeScript definitions:
 
 
 
