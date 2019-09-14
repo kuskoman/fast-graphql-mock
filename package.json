@@ -1,6 +1,6 @@
 {
   "name": "fast-graphql-mock",
-  "version": "1.2.1-alpha",
+  "version": "1.2.2-alpha",
   "description": "A library for mocking GraphQL schema using one command",
   "bin": "dist/cli.js",
   "main": "dist/index.js",
