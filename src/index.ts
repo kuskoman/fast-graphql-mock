@@ -1,7 +1,7 @@
 import { createMockServer, startMockServer } from './server'
 import mockSchema from './mock'
 
-module.exports = {
+export {
     mockSchema,
     createMockServer,
     startMockServer
