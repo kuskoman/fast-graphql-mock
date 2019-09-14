@@ -1,5 +1,5 @@
-const { createMockServer, startMockServer } = require('./server')
-const mockSchema = require('./mock')
+import { createMockServer, startMockServer } from './server'
+import mockSchema from './mock'
 
 module.exports = {
     mockSchema,

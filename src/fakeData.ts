@@ -1,13 +1,13 @@
-const faker = require('faker')
+import faker from 'faker'
 
 const fakeData = {
-    String: () => faker.lorem.words(5),
-    Date: () => faker.date.future(),
-    DateTime: () => faker.date.future(),
-    PostalCode: () => faker.address.zipCode(),
-    PhoneNumber: () => faker.phone.phoneNumber(),
-    URL: () => faker.internet.url(),
-    EmailAdress: () => faker.internet.exampleEmail()
+    String: (): string => faker.lorem.words(5),
+    Date: (): string => faker.date.future(),
+    DateTime: (): string => faker.date.future(),
+    PostalCode: (): string => faker.address.zipCode(),
+    PhoneNumber: (): string => faker.phone.phoneNumber(),
+    URL: (): string => faker.internet.url(),
+    EmailAdress: (): string => faker.internet.exampleEmail()
 }
 
-module.exports = fakeData
+export default fakeData

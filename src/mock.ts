@@ -1,9 +1,9 @@
-const { importSchema } = require('graphql-import')
-const { makeExecutableSchema, addMockFunctionsToSchema} = require('graphql-tools')
-const fs = require('fs')
+import { importSchema } from 'graphql-import'
+import { makeExecutableSchema, addMockFunctionsToSchema} from 'graphql-tools'
+import { existsSync} from 'fs'
 
 const checkIfFileExist = (path) => {
-    if (!fs.existsSync(path)) {
+    if (!existsSync(path)) {
         console.error(`${path} does not exist`)
         process.exit(1)
     }
@@ -18,4 +18,4 @@ const mockSchema = (file) => {
     return schema
 }
 
-module.exports = mockSchema
+export default mockSchema

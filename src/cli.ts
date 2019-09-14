@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 
-const program = require('commander')
-const { createMockServer, startMockServer } = require('./server')
-const mockSchema = require('./mock')
+import * as program from 'commander'
+import { createMockServer, startMockServer } from './server'
+import mockSchema from './mock'
 
 program
     .option('-f --file <file>', 'schema file location', 'schema.graphql')
