@@ -5,6 +5,7 @@ on:
     branches:
       - master
 
+jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
