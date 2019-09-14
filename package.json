@@ -4,6 +4,9 @@
   "description": "A library for mocking GraphQL schema using one command",
   "bin": "src/cli.js",
   "main": "src/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuskoman/fast-graphql-mock.git"
