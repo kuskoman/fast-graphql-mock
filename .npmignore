@@ -1,7 +1,2 @@
-!dist
-!LICENSE
-!package.json
-!package-lock.json
-!README.md
 tsconfig.json
 src
