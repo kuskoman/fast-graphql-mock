@@ -63,9 +63,15 @@ fast-graphql-mock -p 3000
 The simplest example of usage of this library:
 
 ```javascript
-const schema = mockSchema('schema.graphql')
-const server = createMockServer(schema)
-startMockServer(server, 3000)
+import {
+  mockSchema,
+  createMockServer,
+  startMockServer,
+} from "fast-graphql-mock";
+
+const schema = mockSchema("schema.graphql");
+const server = createMockServer(schema);
+startMockServer(server, 3000);
 ```
 
 ## Why
