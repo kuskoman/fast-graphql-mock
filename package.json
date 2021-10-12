@@ -32,7 +32,8 @@
     "apollo-server": "^2.19.2",
     "commander": "^7.0.0",
     "faker": "^5.2.0",
-    "graphql": "^15.5.0"
+    "graphql": "^15.5.0",
+    "graphql-scalars": "^1.11.1"
   },
   "devDependencies": {
     "@types/faker": "^5.1.6",

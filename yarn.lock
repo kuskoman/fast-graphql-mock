@@ -953,6 +953,13 @@ graphql-extensions@^0.15.0:
     apollo-server-env "^3.1.0"
     apollo-server-types "^0.9.0"
 
+graphql-scalars@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/graphql-scalars/-/graphql-scalars-1.11.1.tgz#32e1f53bd85c023b8437b707be506b2d52ea95c8"
+  integrity sha512-V9FHfH1HBhaLjeIBxiBU9gBewaqE6Ci/Ei5NLYbRU2hUWINtTO8JSpeOGPb14hshxy0xDTENxLMxrgGgmwF9IA==
+  dependencies:
+    tslib "~2.3.0"
+
 graphql-subscriptions@^1.0.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/graphql-subscriptions/-/graphql-subscriptions-1.2.1.tgz#2142b2d729661ddf967b7388f7cf1dd4cf2e061d"

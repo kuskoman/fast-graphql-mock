@@ -4,7 +4,7 @@ import fakeData from "./fakeData";
 
 export const createMockServer = (
   schema: GraphQLSchema,
-  additionalFakers: Record<string, unknown> = {}
+  additionalFakers: any = {}
 ): ApolloServer => {
   return new ApolloServer({
     schema,
