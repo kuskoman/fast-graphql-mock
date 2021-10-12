@@ -2,10 +2,13 @@ import { GraphQLSchema } from "graphql";
 import { ApolloServer } from "apollo-server";
 import fakeData from "./fakeData";
 
-export const createMockServer = (schema: GraphQLSchema): ApolloServer => {
+export const createMockServer = (
+  schema: GraphQLSchema,
+  additionalFakers: Record<string, unknown> = {}
+): ApolloServer => {
   return new ApolloServer({
     schema,
-    mocks: fakeData,
+    mocks: { ...fakeData, ...additionalFakers },
   });
 };
 
