@@ -74,6 +74,19 @@ const server = createMockServer(schema);
 startMockServer(server, 3000);
 ```
 
+#### Adding custom mocks (fakers)
+
+You are able to pass custom mocks to the server
+
+```javascript
+// [...]
+const customFakers = {
+  PhoneNumber: (): string => '123456789',
+};
+const server = createMockServer(schema, customFakers);
+// [...]
+```
+
 ## Why
 
 Code inside this library is really short (what can't be said about it's dependencies),
